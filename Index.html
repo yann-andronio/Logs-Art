@@ -14,11 +14,11 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-xl fixed-top px-lg-5 py-2" aria-label="Navbar Example">
+    <nav class="navbar navbar-expand-xl navbar-custom px-lg-5 py-3" aria-label="Navbar Example">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="./assets/images/2.png" alt="Logo" style="width: 50px; height: auto;">
-                
+                <span class="ms-2" style="font-size: 1.5rem; font-weight: bold; color: #ffbb33;">Art Logo</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarExample"
                 aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarExample">
-                <ul class="navbar-nav mb-2 mb-xl-0 gap-3">
+                <ul class="navbar-nav mb-2 mb-xl-0 ">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="/">Accueil</a>
                     </li>
@@ -43,16 +43,79 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Apropos</a>
+                        <a class="nav-link" href="#">À Propos</a>
                     </li>
                 </ul>
-                
             </div>
         </div>
     </nav>
+    <main>
+        <header>
+            <div class="boxheader d-flex align-items-center justify-content-between flex-lg-row flex-column">
+                <div class="gauche text-center">
+                    <h1 style="font-size: 2.5rem; color: #212529;">Bienvenue chez <span style="color: #ffbb33;">Art
+                            Logo</span></h1>
+                    <p style="font-size: 1.2rem; color: #555;">
+                        Votre partenaire idéal pour créer des logos uniques qui reflètent l'essence de votre marque.
+                        Que vous soyez une entreprise ou un particulier, nous transformons vos idées en créations
+                        visuelles
+                        mémorables. Découvrez nos services personnalisés et laissez-nous vous aider à faire briller
+                        votre
+                        identité visuelle!
+                    </p>
+                    <a href="#" class="btn btn-warning btn-lg mt-3">Découvrez nos services</a>
+                </div>
+                <div class="droite" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                    <div id="lottieheader"></div>
+                    <!-- <img src="assets/images/3.jpg" width="100%" alt="Art Logo Designs"> -->
+                </div>
+            </div>
+        </header>
+
+
+        <section>
+            <div class="section1">
+                <div class="boxparents1   gap-4">
+                    <div class="cardbox d-flex flex-column align-items-center">
+                        <i class="fas fa-clock fa-3x mb-3" style="color: #ffbb33;"></i>
+                        <h3>Disponibilité 24h/24</h3>
+                        <p>Notre équipe est à votre service à tout moment. Nous sommes là pour vous aider, jour et nuit.</p>
+                    </div>
+                    <div class="cardbox d-flex flex-column align-items-center">
+                        <i class="fas fa-bolt fa-3x mb-3" style="color: #ffbb33;"></i>
+                        <h3>Service Rapide</h3>
+                        <p>Nous garantissons des créations de logos dans des délais rapides sans compromettre la qualité.</p>
+                    </div>
+                    <div class="cardbox d-flex flex-column align-items-center">
+                        <i class="fas fa-paint-brush fa-3x mb-3" style="color: #ffbb33;"></i>
+                        <h3>Designs Personnalisés</h3>
+                        <p>Chaque logo est conçu sur mesure pour correspondre à votre vision unique et à l'identité de votre marque.</p>
+                    </div>
+                    <div class="cardbox d-flex flex-column align-items-center">
+                        <i class="fas fa-thumbs-up fa-3x mb-3" style="color: #ffbb33;"></i>
+                        <h3>Satisfaction Garantie</h3>
+                        <p>Nous ne nous arrêtons pas tant que vous n'êtes pas entièrement satisfait de votre logo.</p>
+                    </div>
+
+                    <div class="cardbox d-flex flex-column align-items-center">
+                        <i class="fas fa-thumbs-up fa-3x mb-3" style="color: #ffbb33;"></i>
+                        <h3>Satisfaction Garantie</h3>
+                        <p>Nous ne nous arrêtons pas tant que vous n'êtes pas entièrement satisfait de votre logo.</p>
+                    </div>
+
+                
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+
 
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="javascript/lottie.min.js"></script>
     <script src="javascript/aos.js"></script>
+    <script src="./javascript/AllLottie.js"></script>
 </body>
 
 </html>
