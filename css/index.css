@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  background-color: whitesmoke;
+
 }
 
 
@@ -12,14 +12,14 @@
 
 /* Style des liens de navigation */
 .nav-link {
-    font-family: 'Arial', sans-serif; 
-    font-size: 1.1rem; 
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
     color: #2e3032;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #ffbb33; 
+    color: #ffbb33;
     text-decoration: underline;
 }
 
@@ -29,11 +29,11 @@
 
 .navbar-brand img {
     width: 50px;
-    height: auto; 
-    margin-right: 10px; 
+    height: auto;
+    margin-right: 10px;
 }
 
-main{
+main {
     padding: 2rem;
 }
 
@@ -41,19 +41,20 @@ main{
     position: relative;
 }
 
-.gauche{
-    flex: 1;
-}
-.droite{
+.gauche {
     flex: 1;
 }
 
-@media (min-width: 992px) { 
+.droite {
+    flex: 1;
+}
+
+@media (min-width: 992px) {
     .navbar-custom {
-        position: fixed; 
-        top: 0; 
+        position: fixed;
+        top: 0;
         width: 100%;
-        z-index: 1030; 
+        z-index: 1030;
     }
 }
 
@@ -66,30 +67,146 @@ main{
 
 
 .section1 {
-    padding: 40px;
+    padding: 0 40px;
     /* background-color: whitesmoke; */
 }
 
-.boxparents1{
+.boxparents1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); 
+    grid-template-columns: repeat(5, 1fr);
 }
 
 
 .cardbox {
     /* background-color: #fff;  */
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
-    text-align: center; 
-    flex: 1; 
+    text-align: center;
+    flex: 1;
     transition: transform 0.3s;
 }
 
 .cardbox:hover {
-    transform: translateY(-5px); /* Légère élévation lors du survol */
+    transform: translateY(-5px);
 }
 
 .cardbox i {
-    margin-bottom: 15px; /* Espace sous l'icône */
+    margin-bottom: 15px;
+}
+
+
+
+/* (tablettes) */
+@media (max-width: 1200px) {
+    .boxparents1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* (smartphones) */
+@media (max-width: 768px) {
+    .boxparents1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*  (téléphones) */
+@media (max-width: 480px) {
+    .boxparents1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/*============= section33333 ============*/
+
+.section3 {
+    /* Pas de background, utilisation de whitesmoke général */
+    padding: 40px 0;
+    margin: 5rem 0 0 0;
+}
+
+.card__container {
+    margin-top: 5rem;
+}
+
+.testimonial-card {
+    background-color: #f4f4f4; /* Blanc cassé pour un effet doux */
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Légère bordure pour un effet élégant */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Effet d'ombre légère au survol */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.card-content {
+    position: relative;
+    padding-left: 30px;
+}
+
+.quote-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    color: #ffbb33;
+    transform: translateY(-50%);
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transition: 0.5s;
+    color: #ffbb33;
+    transform: scale(1.06); /* Agrandissement doux */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    transition: 0.5s;
+    color: #ffbb33; /* Maintien de ta couleur de base */
+    background-color: rgba(255, 255, 255, 0.9); /* Fond transparent avec légère opacité */
+    border-radius: 50%; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Effet de profondeur */
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .card__data {
+        padding: 1rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+    .card__content {
+        margin-inline: 3rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+    }
 }
