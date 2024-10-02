@@ -210,3 +210,18 @@ main {
         display: block;
     }
 }
+
+
+/*============== section4444================ */
+
+
+
+.custom-input:focus {
+    border-color: #ffbb33; 
+    box-shadow: 0 0 8px rgba(255, 187, 51, 0.5); 
+    outline: none; 
+}
+
+.custom-input:hover {
+    border-color: #9f7126; 
+}
