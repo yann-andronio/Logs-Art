@@ -123,7 +123,35 @@ main {
     }
 }
 
+/*============= section22222 ============*/
 
+
+.Boxsection2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* (tablettes) */
+@media (max-width: 1200px) {
+    .Boxsection2 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* (smartphones) */
+@media (max-width: 768px) {
+    .Boxsection2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*  (téléphones) */
+@media (max-width: 480px) {
+    .Boxsection2 {
+        grid-template-columns: 1fr;
+    }
+}
 
 /*============= section33333 ============*/
 
@@ -220,7 +248,9 @@ main {
 
 /*============== section4444================ */
 
-
+.section4{
+    padding:  0 0 50px 0;
+}
 
 .custom-input:focus {
     border-color: #ffbb33; 
@@ -247,7 +277,10 @@ main {
     scroll-margin-top: 100px; 
     padding-top: 100px; 
 }
-
+#design{
+    scroll-margin-top: 100px; 
+    padding-top: 100px; 
+}
 ::-webkit-scrollbar{
     width: 12px;
 }
